@@ -220,7 +220,7 @@ def header(t, lang, name, asset, home, cur):
     return f'''<body>
 <a class="skip" href="#main">{t["skip"]}</a>
 <header class="wrap site-head">
-  <a class="brand" href="{home}" aria-label="Better Vibe, {t["nav_home"]}"><img src="{asset}icon-64.png" alt="" width="40" height="40">Better Vibe</a>
+  <a class="brand" href="{home}" aria-label="Better Vibe, {t["nav_home"]}"><img src="{asset}icon-128.png" alt="" width="40" height="40">Better Vibe</a>
   <nav class="nav" aria-label="Main">
     <a href="{home}"{cur_attr("home")}>{t["nav_home"]}</a>
     <a href="support.html"{cur_attr("support")}>{t["nav_support"]}</a>
