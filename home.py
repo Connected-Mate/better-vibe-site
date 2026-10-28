@@ -287,7 +287,7 @@ def lab_html(lang, t):
 
 
 def video(name, w, h, label, cls="", eager=False):
-    return (f'<video class="vid {cls}" width="{w}" height="{h}" muted loop playsinline '
+    return (f'<video class="vid {cls}" width="{w}" height="{h}" style="aspect-ratio:{w}/{h}" muted loop playsinline '
             f'preload="{"metadata" if eager else "none"}" poster="{{A}}media/{name}-poster.webp" aria-label="{e(label)}" data-auto>'
             f'<source src="{{A}}media/{name}.webm" type="video/webm"><source src="{{A}}media/{name}.mp4" type="video/mp4"></video>')
 
