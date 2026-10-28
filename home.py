@@ -319,7 +319,7 @@ def page(lang):
         for i, (a, b) in enumerate(t["steps"]))
     proof = "".join(f'<li data-reveal style="--d:{i}"><h3>{e(a)}</h3><p>{b}</p></li>' for i, (a, b) in enumerate(t["proof"]))
     tiers = "".join(
-        f'<li class="tier" style="--i:{i}"><img src="{A}brand/{"icon-384" if k == "icon" else k}.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>{e(l)}</span></li>'
+        f'<li class="tier" style="--i:{i}"><img src="{A}brand/{"tier-original" if k == "icon" else k}.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>{e(l)}</span></li>'
         for i, (k, l) in enumerate(t["tiers"]))
     fcols = "".join(
         f'<nav class="f-col" aria-label="{e(h)}"><h2>{e(h)}</h2><ul>' + "".join(f'<li><a href="{u}">{e(l)}</a></li>' for u, l in links) + "</ul></nav>"

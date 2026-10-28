@@ -224,16 +224,22 @@
     var cur = "hero", small = window.matchMedia("(max-width: 40rem)"), quietT = null, typeT = null;
     ["happy", "encourage", "celebrate", "streak"].forEach(function (p) { var i = new Image(); i.src = base + "mascot-" + p + ".webp"; });
 
+    // The full line sits invisible underneath so the bubble keeps its final size
+    // while the visible copy types out: no layout shift, nothing clipped.
     var typeOut = function (text) {
       clearTimeout(typeT);
-      if (reduce) { say.textContent = text; return; }
-      var i = 0; say.textContent = "";
-      (function go() { i += 2; say.textContent = text.slice(0, i); if (i < text.length) typeT = setTimeout(go, 16); })();
+      say.innerHTML = "";
+      var full = doc.createElement("span"), typed = doc.createElement("span");
+      full.className = "full"; typed.className = "typed"; typed.setAttribute("aria-hidden", "true");
+      full.textContent = text; say.appendChild(full); say.appendChild(typed);
+      if (reduce) { typed.textContent = text; return; }
+      var i = 0;
+      (function go() { i += 2; typed.textContent = text.slice(0, i); if (i < text.length) typeT = setTimeout(go, 16); })();
     };
     var quiet = function () {
       clearTimeout(quietT);
       guide.classList.remove("quiet");
-      quietT = setTimeout(function () { guide.classList.add("quiet"); }, small.matches ? 5200 : 8000);
+      quietT = setTimeout(function () { guide.classList.add("quiet"); }, small.matches ? 5000 : 6500);
     };
     var setLine = function (key) {
       if (!lines[key] || key === cur) return;
