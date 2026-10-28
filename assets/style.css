@@ -1,5 +1,5 @@
-@font-face{font-family:"Montserrat";font-style:italic;font-weight:700;font-display:swap;src:url("fonts/Montserrat-BoldItalic.ttf") format("truetype")}
-@font-face{font-family:"Montserrat";font-style:italic;font-weight:800;font-display:swap;src:url("fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype")}
+@font-face{font-family:"Montserrat";font-style:italic;font-weight:700;font-display:swap;src:url("fonts/montserrat-bold-italic.woff2") format("woff2")}
+@font-face{font-family:"Montserrat";font-style:italic;font-weight:800;font-display:swap;src:url("fonts/montserrat-extrabold-italic.woff2") format("woff2")}
 
 :root{
   color-scheme:light dark;

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generates EN (root) and FR (/fr/) pages. Run: python3 build.py"""
 import os, html
+import home as landing
 
 BASE = "https://connected-mate.github.io/better-vibe-site/"
 STORE = "https://apps.apple.com/us/search?term=Better%20Vibe"
@@ -191,7 +192,7 @@ def head(t, lang, name, title, desc, asset):
 <link rel="alternate" hreflang="x-default" href="{en_u}">
 <link rel="icon" type="image/png" sizes="32x32" href="{asset}favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="{asset}favicon-64.png">
-<link rel="apple-touch-icon" href="{asset}icon-256.png">
+<link rel="apple-touch-icon" href="{asset}brand/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Better Vibe">
 <meta property="og:title" content="{html.escape(title)}">
@@ -204,7 +205,7 @@ def head(t, lang, name, title, desc, asset):
 <meta name="twitter:title" content="{html.escape(title)}">
 <meta name="twitter:description" content="{html.escape(desc)}">
 <meta name="twitter:image" content="{img}">
-<link rel="preload" href="{asset}fonts/Montserrat-ExtraBoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="{asset}fonts/montserrat-extrabold-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{asset}style.css">
 </head>
 '''
@@ -357,7 +358,7 @@ def support(lang):
 for lang in ("en", "fr"):
     d = ROOT if lang == "en" else os.path.join(ROOT, "fr")
     os.makedirs(d, exist_ok=True)
-    for name, fn in (("index.html", home), ("privacy.html", privacy), ("support.html", support)):
+    for name, fn in (("index.html", landing.page), ("privacy.html", privacy), ("support.html", support)):
         with open(os.path.join(d, name), "w", encoding="utf-8") as f:
             f.write(fn(lang))
 print("ok")

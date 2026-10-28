@@ -2,119 +2,267 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Better Vibe — Speak. Your prompt is ready.</title>
-<meta name="description" content="Better Vibe is a Mac menu-bar app: press a shortcut, talk, and a clean prompt for your AI coding assistant lands on your clipboard. 100% on-device. No account, no tracking.">
-<meta name="theme-color" content="#f2f8f5" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#08201b" media="(prefers-color-scheme: dark)">
-<link rel="canonical" href="https://connected-mate.github.io/better-vibe-site/index.html">
-<link rel="alternate" hreflang="en" href="https://connected-mate.github.io/better-vibe-site/index.html">
-<link rel="alternate" hreflang="fr" href="https://connected-mate.github.io/better-vibe-site/fr/index.html">
-<link rel="alternate" hreflang="x-default" href="https://connected-mate.github.io/better-vibe-site/index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Better Vibe — Speak. Your prompt is ready. Free Mac app</title>
+<meta name="description" content="Better Vibe turns your voice into clean prompts for your AI coding agents. Speak 3× faster than you type, send fewer tokens. Free, 100% on your Mac.">
+<meta name="theme-color" content="#062a21">
+<meta name="color-scheme" content="dark light">
+<link rel="canonical" href="https://connected-mate.github.io/better-vibe-site/">
+<link rel="alternate" hreflang="en" href="https://connected-mate.github.io/better-vibe-site/">
+<link rel="alternate" hreflang="fr" href="https://connected-mate.github.io/better-vibe-site/fr/">
+<link rel="alternate" hreflang="x-default" href="https://connected-mate.github.io/better-vibe-site/">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
-<link rel="apple-touch-icon" href="assets/icon-256.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Better Vibe">
-<meta property="og:title" content="Better Vibe — Speak. Your prompt is ready.">
-<meta property="og:description" content="Better Vibe is a Mac menu-bar app: press a shortcut, talk, and a clean prompt for your AI coding assistant lands on your clipboard. 100% on-device. No account, no tracking.">
-<meta property="og:url" content="https://connected-mate.github.io/better-vibe-site/index.html">
-<meta property="og:image" content="https://connected-mate.github.io/better-vibe-site/assets/icon-512.png">
+<meta property="og:title" content="Better Vibe — Speak. Your prompt is ready. Free Mac app">
+<meta property="og:description" content="Better Vibe turns your voice into clean prompts for your AI coding agents. Speak 3× faster than you type, send fewer tokens. Free, 100% on your Mac.">
+<meta property="og:url" content="https://connected-mate.github.io/better-vibe-site/">
+<meta property="og:image" content="https://connected-mate.github.io/better-vibe-site/assets/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fr_FR">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Better Vibe — Speak. Your prompt is ready.">
-<meta name="twitter:description" content="Better Vibe is a Mac menu-bar app: press a shortcut, talk, and a clean prompt for your AI coding assistant lands on your clipboard. 100% on-device. No account, no tracking.">
-<meta name="twitter:image" content="https://connected-mate.github.io/better-vibe-site/assets/icon-512.png">
-<link rel="preload" href="assets/fonts/Montserrat-ExtraBoldItalic.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="assets/style.css">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Better Vibe — Speak. Your prompt is ready. Free Mac app">
+<meta name="twitter:description" content="Better Vibe turns your voice into clean prompts for your AI coding agents. Speak 3× faster than you type, send fewer tokens. Free, 100% on your Mac.">
+<meta name="twitter:image" content="https://connected-mate.github.io/better-vibe-site/assets/og-en.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Better Vibe", "operatingSystem": "macOS 13 or later", "applicationCategory": "DeveloperApplication", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "Better Vibe turns your voice into clean prompts for your AI coding agents. Speak 3× faster than you type, send fewer tokens. Free, 100% on your Mac.", "url": "https://connected-mate.github.io/better-vibe-site/", "inLanguage": "en", "author": {"@type": "Organization", "name": "Connected Mate"}}</script>
+<link rel="preload" href="assets/fonts/montserrat-extrabold-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/brand/icon-640.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="assets/home.css">
+<script>document.documentElement.classList.add("js");try{if(matchMedia("(prefers-reduced-motion: reduce)").matches||/[?&]calm/.test(location.search))document.documentElement.classList.add("rm")}catch(e){}</script>
+<script src="assets/home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="wrap site-head">
-  <a class="brand" href="./" aria-label="Better Vibe, Home"><img src="assets/icon-128.png" alt="" width="40" height="40">Better Vibe</a>
-  <nav class="nav" aria-label="Main">
-    <a href="./" aria-current="page">Home</a>
-    <a href="support.html">Support</a>
-    <a href="privacy.html">Privacy</a>
-    <a class="lang" href="fr/" hreflang="fr" lang="fr" aria-label="Français">Français</a>
-  </nav>
+<div class="lang-banner" hidden><p>Tu parles français ? <a href="fr/" hreflang="fr" lang="fr">Voir le site en français</a></p><button type="button" class="lang-banner-x" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="progress" aria-hidden="true"><span></span></div>
+<header class="top">
+  <a class="brand" href="./" aria-label="Better Vibe">
+    <img src="assets/brand/icon-384.webp" alt="" width="36" height="36"><span>Better Vibe</span>
+  </a>
+  <nav class="top-nav" aria-label="Main"><a href="#produit">The real app</a><a href="#comment">How it works</a><a href="#prive">Privacy</a></nav>
+  <div class="top-actions">
+    <a class="lang" href="fr/" hreflang="fr" aria-label="Version française">FR</a>
+    <a class="btn btn-sm" href="#telecharger" data-download><span>Download</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M6 12l6 6 6-6"/></svg></a>
+  </div>
 </header>
+
 <main id="main">
-<div class="wrap hero">
-  <div>
-    <p class="eyebrow">Voice to prompt, 100% offline</p>
-    <h1>Speak. Your prompt is ready.</h1>
-    <p class="lede">Press a shortcut and say what you want, "uh"s and all. Better Vibe turns it into a clean prompt for your coding assistant, with your clipboard attached as context. Your voice never leaves your Mac.</p>
-    <div class="cta-row">
-      <a class="btn" href="https://apps.apple.com/us/search?term=Better%20Vibe"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 1.43c0 1.14-.46 2.22-1.2 3-.78.84-2.06 1.5-3.1 1.41-.13-1.1.4-2.25 1.14-3 .83-.87 2.2-1.5 3.16-1.41zM20.5 17.1c-.55 1.27-.81 1.83-1.52 2.95-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.05-1.77-4.04-3.33C-.2 15.94-.49 10.8 1.23 8.14c1.22-1.89 3.15-2.99 4.96-2.99 1.84 0 3 1.01 4.52 1.01 1.48 0 2.38-1.01 4.51-1.01 1.61 0 3.32.88 4.54 2.4-3.99 2.19-3.34 7.88.74 9.55z"/></svg><span>Download on the Mac App Store</span></a>
-      <p class="fine">For Mac with Apple Silicon, macOS 13 or later.</p>
+
+<section class="hero" data-guide="hero" aria-labelledby="hero-h">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <p class="kicker hero-in" style="--i:0">Free Mac app for vibe coders</p>
+    <h1 id="hero-h" class="display"><span class="line"><span class="line-in" style="--i:0">Speak.</span></span><span class="line"><span class="line-in" style="--i:1">Your prompt</span></span><span class="line"><span class="line-in" style="--i:2">is ready.</span></span></h1>
+    <p class="lede hero-in" style="--i:3">Say your idea out loud, “uh”s and “no, wait”s included. Better Vibe cleans it up and turns it into a clear prompt for your AI agent. Faster than typing, with fewer tokens.</p>
+    <div class="cta-row hero-in" style="--i:4">
+      <a class="btn btn-primary" href="#telecharger" data-download><span>Download, it&#x27;s free</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M6 12l6 6 6-6"/></svg></a>
+      <a class="btn btn-ghost" href="#produit">See the real app</a>
+    </div>
+    <ul class="hero-meta hero-in" style="--i:5"><li>macOS 13 or later</li><li>Apple Silicon Mac</li><li>100% on your Mac</li></ul>
+    <p class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the Mac App Store</p>
+  </div>
+  <div class="hero-stage" role="img" aria-label="Animation: a dictated sentence appears word by word, then becomes a clean prompt, copied.">
+    <div class="stage-icon" aria-hidden="true">
+      <img src="assets/brand/icon-640.webp" width="640" height="640" alt="" fetchpriority="high">
+    </div>
+    <div class="stage-ui" aria-hidden="true">
+      <div class="pill-text"><p><span>so </span><span>I&#x27;d </span><span>like </span><span>us </span><span>to </span><span>rework </span><span>the </span><span>app&#x27;s </span><span>home </span><span>page </span><span>because </span><span>right </span><span>now </span><span>when </span><span>you </span><span>land </span><span>on </span><span>it </span><span>you </span><span>don&#x27;t </span><span>get </span><span>right </span><span>away </span></p></div>
+      <div class="pill"><i></i><span>Listening</span><b>.</b><b>.</b></div>
+      <div class="result">
+        <div class="result-top"><span class="result-title"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg>Improved prompt</span><span class="result-copied"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Copied</span></div>
+        <p>Rework the home page: when people land on it, they don&#x27;t immediately understand what the app does.</p>
+      </div>
     </div>
   </div>
-  <div class="mock" role="img" aria-label="“euh so the retry logic is duplicated in like three places, pull it into one function, no wait, one actor.” → ## Task
-Refactor the retry logic into a single actor. It is currently duplicated in three places.
+  <a class="scroll-cue" href="#vitesse"><span>Scroll</span><i aria-hidden="true"></i></a>
+</section>
 
-## Context
-```swift
-// your copied code, fenced
-```">
-    <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Better Vibe — result</span></div>
-    <div class="mock-body" aria-hidden="true">
-      <div><p class="mock-label">What you said</p><p class="mock-said">“euh so the retry logic is duplicated in like three places, pull it into one function, no wait, one actor.”</p></div>
-      <div><p class="mock-label">What lands on your clipboard</p><div class="mock-out"><b>## Task</b>
-Refactor the retry logic into a single actor. It is currently duplicated in three places.
-
-<b>## Context</b>
-```swift
-// your copied code, fenced
-```</div></div>
-      <div class="levels"><span class="">Raw</span><span class="">Cleaned</span><span class="on">Structured</span><span class="">AI Polish</span></div>
+<section id="vitesse" class="ch ch-speed pin" data-scrub="speed" data-guide="c1" aria-labelledby="c1-h">
+  <div class="sticky">
+    <div class="wrap">
+      <p class="kicker">01 · Speed</p>
+      <h2 id="c1-h" class="display-2">Your voice is three times faster than your fingers.</h2>
+      <p class="sub">Speaking is about three times faster than typing. While you hunt for the right key, your idea is already out.</p>
+      <div class="race" aria-hidden="true">
+        <div class="lane lane-kb"><span class="lane-l">Typing</span><div class="lane-track"><p class="lane-text"><span>Add a dark mode to the settings page and keep the choice after a restart.</span></p><i class="caret"></i></div></div>
+        <div class="lane lane-voice"><span class="lane-l">Speaking</span><div class="lane-track"><p class="lane-text"><span>Add a dark mode to the settings page and keep the choice after a restart.</span></p><i class="caret"></i></div><span class="x3">×3</span></div>
+      </div>
+      <p class="src"><a href="https://arxiv.org/abs/1608.07323" rel="noopener" target="_blank">Source: Ruan et al., Stanford, 2016<span class="vh"> (new tab)</span></a></p>
     </div>
   </div>
-</div>
-<div class="wrap video-slot" id="promo" hidden>
-  <video controls preload="metadata" playsinline poster="assets/promo-en-poster.jpg" aria-label="Better Vibe in 30 seconds">
-    <source src="assets/promo-en.mp4" type="video/mp4">
-  </video>
-</div>
-<script>
-(function(){var s=document.getElementById("promo"),v=s&&s.querySelector("video");
-if(!v)return;v.addEventListener("loadedmetadata",function(){s.hidden=false});
-v.addEventListener("error",function(){s.hidden=true},true);v.load();})();
-</script>
-<section class="wrap" id="how" aria-labelledby="how-h">
-  <div class="sec-head"><p class="eyebrow">How it works</p><h2 id="how-h">Four steps. No typing.</h2></div>
-  <ol class="steps"><li><h3>Copy what you're working on</h3><p>The code, the error or the link. <kbd>⌘C</kbd>, like always.</p></li><li><h3>Press the shortcut and talk</h3><p><kbd>⌘⇧D</kbd> by default. Say it like you'd tell a colleague. Hesitations are fine.</p></li><li><h3>Press it again</h3><p>Better Vibe transcribes locally, removes the filler, resolves your self-corrections and attaches your clipboard as properly formatted context.</p></li><li><h3>Paste anywhere</h3><p><kbd>⌘V</kbd> into any chat, IDE or terminal. It works with any AI assistant that has a text box.</p></li></ol>
 </section>
-<section class="band" id="privacy-first" aria-labelledby="priv-h">
-  <div class="wrap">
-    <p class="eyebrow">Private by architecture</p>
-    <h2 id="priv-h">Your voice stays on your Mac.</h2>
-    <p style="margin-top:var(--s4)">Transcription, cleanup and prompt assembly all run on your Mac. There is no account, no analytics and no tracking.</p>
-    <div class="proof"><div><h3>Local Whisper</h3><p>Speech recognition runs on-device with Metal acceleration. Audio is never transmitted.</p></div><div><h3>One optional download</h3><p>The only network use: fetching Whisper model files from Hugging Face, when you ask for it.</p></div><div><h3>No data collected</h3><p>The App Store label reads “No Data Collected”. Read the full <a href="privacy.html">privacy policy</a>.</p></div></div>
+
+<section id="nettoyage" class="ch ch-clean pin" data-scrub="clean" data-guide="c2" aria-labelledby="c2-h">
+  <div class="sticky">
+    <div class="wrap">
+      <p class="kicker">02 · Cleanup</p>
+      <h2 id="c2-h" class="display-2">You talk the way you think. Better Vibe writes like a pro.</h2>
+      <div class="lab">
+        <div class="lab-meter"><span><b class="tok-in" data-from="48" data-to="41">41</b> tokens sent</span><span class="tok-was">≈ 48 tokens said</span><span class="tok-delta">−7 tokens</span></div>
+        <div class="lab-cols">
+          <div class="lab-said"><h3>What you said</h3><p><span class="w x" data-k="f" data-n="0"><s>so</s></span> <span class="w x" data-k="f" data-n="1"><s>uh</s></span> <span class="w">There&#x27;s</span> <span class="w">a</span> <span class="w">bug</span> <span class="w">in</span> <span class="w">LoginView.swift</span> <span class="w">when</span> <span class="w">I</span> <span class="w">click</span> <span class="w">the</span> <span class="w x" data-k="c" data-n="2"><s>sign</s></span> <span class="w x" data-k="c" data-n="3"><s>in</s></span> <span class="w">button.</span> <span class="w">It</span> <span class="w x" data-k="c" data-n="4"><s>crashes,</s></span> <span class="w x" data-k="f" data-n="5"><s>well</s></span> <span class="w x" data-k="c" data-n="6"><s>no</s></span> <span class="w x" data-k="c" data-n="7"><s>it</s></span> <span class="w">doesn&#x27;t</span> <span class="w">crash;</span> <span class="w">it</span> <span class="w">just</span> <span class="w">stays</span> <span class="w">stuck</span> <span class="w">on</span> <span class="w">the</span> <span class="w">spinner</span> <span class="w">forever.</span> <span class="w x" data-k="f" data-n="8"><s>and</s></span> <span class="w x" data-k="f" data-n="9"><s>uh</s></span> <span class="w x" data-k="f" data-n="10"><s>yeah</s></span> <span class="w">Can</span> <span class="w">you</span> <span class="w">look</span> <span class="w">at</span> <span class="w">why?</span> <span class="w">Thanks.</span></p></div>
+          <div class="lab-sent"><h3>What goes to the agent</h3><p>There's a bug in LoginView.swift when I click the <mark>sign-in</mark> button. It doesn't crash; it just stays stuck on the spinner forever. Can you look at why? Thanks.</p></div>
+        </div>
+        <div class="lab-why"><h3>Why these words changed</h3><ul><li data-k="f"><span class="dot" aria-hidden="true"></span>Filler word</li><li data-k="c"><span class="dot" aria-hidden="true"></span>You corrected yourself</li></ul></div>
+      </div>
+      <p class="note">Real example, taken from the app&#x27;s Lab.</p>
+    </div>
   </div>
 </section>
-<section class="wrap" id="features" aria-labelledby="feat-h">
-  <div class="sec-head"><p class="eyebrow">Features</p><h2 id="feat-h">Made for how you actually speak</h2></div>
-  <dl class="features"><div><dt>Four improvement levels</dt><dd>Raw, Cleaned, Structured, or AI Polish. Switch between them with the arrow keys right on the result window.</dd></div><div><dt>AI Polish, on-device</dt><dd>On Macs with Apple Intelligence (macOS 26 or later), Apple's on-device model rewrites your dictation as a precise instruction. Optional, and it falls back to the local cleanup when unavailable.</dd></div><div><dt>Context that formats itself</dt><dd>Swift, TypeScript, Python, JSON, URLs, error logs, file paths: each is detected and fenced correctly. Pin extra snippets when one clipboard isn't enough.</dd></div><div><dt>Prompt templates</dt><dd>Fix a bug, build a feature, refactor, code review, explain, commit message, or free-form. Markdown or XML output.</dd></div><div><dt>Still a full dictation app</dt><dd>Dictate to clipboard, 17 languages with auto-detect, voice commands for punctuation, a custom dictionary and an optional profanity filter.</dd></div><div><dt>Built for Apple Silicon</dt><dd>Whisper models from Tiny (fast) to Large v3 (most accurate). Better Vibe recommends one based on your chip, memory and measured speed.</dd></div></dl>
+
+<section id="tokens" class="ch ch-tokens" data-guide="c3" aria-labelledby="c3-h">
+  <div class="wrap tokens-grid">
+    <div>
+      <p class="kicker">03 · Tokens</p>
+      <h2 id="c3-h" class="big-num"><span class="num" data-count="15">−15</span><span class="pct">%</span><span class="vh"> tokens on this one sentence.</span></h2>
+      <p class="big-sub" aria-hidden="true">tokens <em>on this one sentence.</em></p>
+    </div>
+    <div>
+      <p class="sub">Your agent reads every word you send, and every word costs something: tokens, context, attention. A prompt without the fluff gets you a sharper answer and leaves more room for your code.</p>
+      <ul class="facts"><li data-reveal style="--d:0">48 → 41 tokens</li><li data-reveal style="--d:1">11 words cleaned up</li><li data-reveal style="--d:2">rewritten in 1.6 s</li></ul>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true"><div class="ticker-in"><span>uh</span><span>like</span><span>you know</span><span>basically</span><span>so yeah</span><span>I mean</span><span>no wait</span><span>uh</span><span>like</span><span>you know</span><span>basically</span><span>so yeah</span><span>I mean</span><span>no wait</span></div></div>
 </section>
-<section class="alt" id="requirements" aria-labelledby="req-h">
+
+<section id="produit" class="ch ch-product" data-guide="c4" aria-labelledby="c4-h">
   <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Requirements</p><h2 id="req-h">What you need</h2></div>
-    <ul class="reqs"><li>A Mac with Apple Silicon (M1 or later)</li><li>macOS 13 Ventura or later</li><li>Microphone access, the only permission the app asks for</li><li>macOS 26 with Apple Intelligence for the optional AI Polish level</li></ul>
-    <div class="cta-row" style="margin-top:var(--s7)"><a class="btn" href="https://apps.apple.com/us/search?term=Better%20Vibe"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 1.43c0 1.14-.46 2.22-1.2 3-.78.84-2.06 1.5-3.1 1.41-.13-1.1.4-2.25 1.14-3 .83-.87 2.2-1.5 3.16-1.41zM20.5 17.1c-.55 1.27-.81 1.83-1.52 2.95-.99 1.56-2.39 3.5-4.12 3.51-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.05-1.77-4.04-3.33C-.2 15.94-.49 10.8 1.23 8.14c1.22-1.89 3.15-2.99 4.96-2.99 1.84 0 3 1.01 4.52 1.01 1.48 0 2.38-1.01 4.51-1.01 1.61 0 3.32.88 4.54 2.4-3.99 2.19-3.34 7.88.74 9.55z"/></svg><span>Download on the Mac App Store</span></a></div>
+    <p class="kicker">04 · The real app</p>
+    <h2 id="c4-h" class="display-2">Not a mockup. The real app, for real.</h2>
+  </div>
+  <div class="tour" data-scrub="tour" data-mode="view">
+    <div class="mac">
+      <div class="mac-screen"><video class="vid " width="1040" height="700" muted loop playsinline preload="metadata" poster="assets/media/app-tour-en-dark-poster.webp" aria-label="Tour of the Better Vibe app: home, dictate, how it works, lab." data-auto><source src="assets/media/app-tour-en-dark.webm" type="video/webm"><source src="assets/media/app-tour-en-dark.mp4" type="video/mp4"></video></div>
+    </div>
+  </div>
+  <div class="wrap clips"><figure class="clip" data-reveal style="--d:0"><div class="clip-frame"><video class="vid " width="524" height="198" muted loop playsinline preload="none" poster="assets/media/live-text-fr-light-poster.webp" aria-label="Your words appear while you speak." data-auto><source src="assets/media/live-text-fr-light.webm" type="video/webm"><source src="assets/media/live-text-fr-light.mp4" type="video/mp4"></video></div><figcaption>Your words appear while you speak.</figcaption></figure><figure class="clip" data-reveal style="--d:1"><div class="clip-frame"><video class="vid " width="520" height="300" muted loop playsinline preload="none" poster="assets/media/reveal-clean-fr-poster.webp" aria-label="Your prompt is ready, and already copied." data-auto><source src="assets/media/reveal-clean-fr.webm" type="video/webm"><source src="assets/media/reveal-clean-fr.mp4" type="video/mp4"></video></div><figcaption>Your prompt is ready, and already copied.</figcaption></figure><figure class="clip" data-reveal style="--d:2"><div class="clip-frame"><video class="vid " width="822" height="620" muted loop playsinline preload="none" poster="assets/media/onboarding-fr-light-poster.webp" aria-label="Ready in a minute, guided step by step." data-auto><source src="assets/media/onboarding-fr-light.webm" type="video/webm"><source src="assets/media/onboarding-fr-light.mp4" type="video/mp4"></video></div><figcaption>Ready in a minute, guided step by step.</figcaption></figure></div>
+</section>
+
+<section id="comment" class="ch ch-how" data-guide="c5" aria-labelledby="c5-h">
+  <div class="wrap how-grid">
+    <div class="how-copy">
+      <p class="kicker">05 · How it works</p>
+      <h2 id="c5-h" class="display-2">Four steps. That&#x27;s it.</h2>
+      <ol class="steps"><li class="step" data-step="0"><span class="step-n" aria-hidden="true">1</span><div><h3>Press the shortcut</h3><p>From any app. Press again to stop.</p></div></li><li class="step" data-step="1"><span class="step-n" aria-hidden="true">2</span><div><h3>Say what you want</h3><p>The way you&#x27;d explain it to a colleague.</p></div></li><li class="step" data-step="2"><span class="step-n" aria-hidden="true">3</span><div><h3>It&#x27;s cleaned up</h3><p>Hesitations removed, prompt structured, on your Mac.</p></div></li><li class="step" data-step="3"><span class="step-n" aria-hidden="true">4</span><div><h3>Paste it</h3><p>⌘V into Claude, Cursor, ChatGPT… anywhere.</p></div></li></ol>
+    </div>
+    <div class="how-stage" aria-hidden="true">
+      <div class="how-view" data-view="0"><img src="assets/media/still-menubar-panel-fr-light.webp" width="340" height="510" alt="" loading="lazy" decoding="async"></div>
+      <div class="how-view" data-view="1"><div class="clip-frame"><video class="vid " width="524" height="198" muted loop playsinline preload="none" poster="assets/media/live-text-fr-light-poster.webp" aria-label="Your words appear while you speak." data-auto><source src="assets/media/live-text-fr-light.webm" type="video/webm"><source src="assets/media/live-text-fr-light.mp4" type="video/mp4"></video></div></div>
+      <div class="how-view" data-view="2"><div class="clip-frame"><video class="vid " width="520" height="300" muted loop playsinline preload="none" poster="assets/media/reveal-clean-fr-poster.webp" aria-label="Your prompt is ready, and already copied." data-auto><source src="assets/media/reveal-clean-fr.webm" type="video/webm"><source src="assets/media/reveal-clean-fr.mp4" type="video/mp4"></video></div></div>
+      <div class="how-view" data-view="3">
+        <div class="paste">
+          <div class="paste-bar"><i></i><i></i><i></i><span>Your agent</span></div>
+          <div class="paste-body"><p class="paste-text">There's a bug in LoginView.swift when I click the <mark>sign-in</mark> button. It doesn't crash; it just stays stuck on the spinner forever. Can you look at why? Thanks.</p></div>
+          <div class="paste-keys"><kbd>⌘</kbd><kbd>V</kbd></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<section id="prive" class="ch ch-private" data-guide="c6" aria-labelledby="c6-h">
+  <div class="wrap private-grid">
+    <div class="vault" aria-hidden="true">
+      <div class="vault-ring r1"></div><div class="vault-ring r2"></div><div class="vault-ring r3"></div>
+      <div class="vault-core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+      <div class="vault-wave"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i></div>
+    </div>
+    <div>
+      <p class="kicker">06 · Private</p>
+      <h2 id="c6-h" class="display-2">Your voice never leaves your Mac.</h2>
+      <p class="sub">Transcription, cleanup, prompt: it all happens on your machine. No account, no cloud, no tracking.</p>
+      <ul class="proof"><li data-reveal style="--d:0"><h3>On-device speech recognition</h3><p>Whisper or Apple's built-in engine, right on your Mac.</p></li><li data-reveal style="--d:1"><h3>No account</h3><p>Open it, talk. No sign-up.</p></li><li data-reveal style="--d:2"><h3>No data collected</h3><p>In black and white in our <a href="privacy.html">privacy policy</a>.</p></li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="niveaux" class="ch ch-levels pin" data-scrub="levels" data-guide="c7" aria-labelledby="c7-h">
+  <div class="sticky">
+    <div class="wrap">
+      <p class="kicker">07 · The game</p>
+      <h2 id="c7-h" class="display-2">Every prompt levels you up.</h2>
+      <p class="sub">Day streaks, a clarity score, icons to unlock: your routine becomes a game. Bronze, silver, gold… all the way to diamond.</p>
+    </div>
+    <ul class="tiers" aria-label="Original, Bronze, Silver, Gold, Diamond"><li class="tier" style="--i:0"><img src="assets/brand/icon-384.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>Original</span></li><li class="tier" style="--i:1"><img src="assets/brand/tier-bronze.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>Bronze</span></li><li class="tier" style="--i:2"><img src="assets/brand/tier-silver.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>Silver</span></li><li class="tier" style="--i:3"><img src="assets/brand/tier-gold.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>Gold</span></li><li class="tier" style="--i:4"><img src="assets/brand/tier-diamond.webp" width="384" height="384" alt="" loading="lazy" decoding="async"><span>Diamond</span></li></ul>
+  </div>
+</section>
+
+<section id="telecharger" class="ch ch-end" data-guide="end" aria-labelledby="end-h">
+  <div class="confetti" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i></div>
+  <div class="wrap end-in">
+    <img class="end-mascot" src="assets/brand/mascot-celebrate.webp" width="256" height="256" alt="" loading="lazy" decoding="async">
+    <h2 id="end-h" class="display-2">It&#x27;s free. Really.</h2>
+    <p class="sub">No subscription, no account, no ads. Just your voice and your prompts.</p>
+    <div class="cta-row"><a class="btn btn-primary" href="#telecharger" data-download><span>Download, it&#x27;s free</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M6 12l6 6 6-6"/></svg></a></div>
+    <p class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the Mac App Store</p>
+    <p class="req">Apple Silicon Mac (M1 or later), macOS 13 Ventura or later.</p>
+  </div>
+</section>
+
 </main>
-<footer>
-  <div class="wrap">
-    <p>© 2026 Better Vibe by Connected Mate.</p>
-    <nav aria-label="Footer">
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="mailto:alex.connectedmate@gmail.com">Contact</a>
-    </nav>
+
+<aside class="guide" aria-label="Your guide" data-lines='{&quot;hero&quot;: [&quot;happy&quot;, &quot;Hi! Let me take you by the hand. Scroll, I&#x27;ll show you everything.&quot;], &quot;c1&quot;: [&quot;streak&quot;, &quot;You talk. I type. Deal?&quot;], &quot;c2&quot;: [&quot;encourage&quot;, &quot;The “uh”s, the “like”s, the sentences you fix halfway… I tidy them up. Your idea stays intact.&quot;], &quot;c3&quot;: [&quot;happy&quot;, &quot;Fewer words, more signal. Your agent will love it.&quot;], &quot;c4&quot;: [&quot;happy&quot;, &quot;This is my place. Everything you see runs on your Mac.&quot;], &quot;c5&quot;: [&quot;encourage&quot;, &quot;Four moves. After a day, you won&#x27;t even notice them.&quot;], &quot;c6&quot;: [&quot;encourage&quot;, &quot;What you say stays between us. Promise.&quot;], &quot;c7&quot;: [&quot;celebrate&quot;, &quot;Level up! Okay, you&#x27;re doing all the work.&quot;], &quot;end&quot;: [&quot;celebrate&quot;, &quot;Shall we? It&#x27;s free.&quot;]}' data-base="assets/brand/">
+  <div class="guide-bubble"><p class="guide-say">Hi! Let me take you by the hand. Scroll, I&#x27;ll show you everything.</p></div>
+  <img class="guide-img" src="assets/brand/mascot-happy.webp" width="256" height="256" alt="">
+  <button type="button" class="guide-x" aria-label="Hide the guide" data-hide="Hide the guide" data-show="Show the guide"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</aside>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="./"><img src="assets/brand/icon-384.webp" alt="" width="44" height="44" loading="lazy"><span>Better Vibe</span></a>
+      <p>Speak. Your prompt is ready.</p>
+      <a class="btn btn-primary btn-sm" href="#telecharger" data-download><span>Download, it&#x27;s free</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M6 12l6 6 6-6"/></svg></a>
+    </div>
+    <nav class="f-col" aria-label="Product"><h2>Product</h2><ul><li><a href="#produit">The real app</a></li><li><a href="#comment">How it works</a></li><li><a href="#niveaux">Levels</a></li><li><a href="#telecharger">Download</a></li></ul></nav><nav class="f-col" aria-label="Help"><h2>Help</h2><ul><li><a href="support.html">Support</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="mailto:alex.connectedmate@gmail.com">Contact</a></li></ul></nav>
+    <a class="li-card" href="https://www.linkedin.com/in/alex-cormeraie/" rel="noopener" target="_blank">
+      <span class="li-k">The maker</span>
+      <span class="li-h"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>Follow Alex on LinkedIn</span>
+      <span class="li-p">What&#x27;s new, behind the scenes, and what&#x27;s coming next.</span>
+      <span class="vh">(new tab)</span>
+    </a>
+  </div>
+  <div class="wordmark" aria-hidden="true">
+    <span>Better Vibe</span>
+    <img class="wordmark-mascot" src="assets/brand/mascot-happy.webp" width="256" height="256" alt="" loading="lazy" decoding="async">
+  </div>
+  <div class="wrap foot-bottom">
+    <p>© 2026 Better Vibe by Connected Mate. Made in France.</p>
+    <div class="foot-links"><a href="fr/" hreflang="fr">Version française</a><a href="#main">Back to top ↑</a></div>
   </div>
 </footer>
+
+<dialog class="gate" aria-labelledby="gate-h" data-cfg='{&quot;dl&quot;: &quot;&quot;, &quot;li&quot;: &quot;https://www.linkedin.com/in/alex-cormeraie/&quot;}'>
+  <button type="button" class="gate-x" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="gate-step" data-step="ask">
+    <img class="gate-mascot" src="assets/brand/mascot-encourage.webp" width="256" height="256" alt="" loading="lazy">
+    <h2 id="gate-h">Wait, wait!</h2>
+    <p>Before you download… will you follow Alex, my creator, on LinkedIn? That&#x27;s where he shares what&#x27;s new in Better Vibe.</p>
+    <div class="gate-actions">
+      <a class="btn btn-li" href="https://www.linkedin.com/in/alex-cormeraie/" rel="noopener" target="_blank" data-follow><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>Follow Alex on LinkedIn</span><span class="vh"> (new tab)</span></a>
+      <button type="button" class="gate-skip" data-skip>No thanks, skip to download&nbsp;→</button>
+    </div>
+  </div>
+  <div class="gate-step" data-step="go" hidden>
+    <img class="gate-mascot" src="assets/brand/mascot-celebrate.webp" width="256" height="256" alt="" loading="lazy">
+    <h2 tabindex="-1"><span class="thanks">Thank you, that means a lot to him!</span><span class="nothanks">The app is yours!</span></h2>
+    <p>Better Vibe is free. Happy dictating!</p>
+    <div class="gate-actions"><a class="btn btn-primary" href="#telecharger" data-go><span>Download Better Vibe</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M6 12l6 6 6-6"/></svg></a></div>
+  </div>
+  <div class="gate-step" data-step="soon" hidden>
+    <img class="gate-mascot" src="assets/brand/mascot-streak.webp" width="256" height="256" alt="" loading="lazy">
+    <h2 tabindex="-1"><span class="thanks">Thank you, that means a lot to him! </span>Better Vibe is almost here</h2>
+    <p>The app is being reviewed for the Mac App Store. Leave your email or follow Alex on LinkedIn: you&#x27;ll hear the moment it&#x27;s live.</p>
+    <div class="gate-actions">
+      <a class="btn btn-primary" href="mailto:alex.connectedmate@gmail.com?subject=Let%20me%20know%20when%20Better%20Vibe%20is%20out&amp;body=Hi%20Alex%2C%20please%20let%20me%20know%20when%20Better%20Vibe%20is%20available%20on%20the%20Mac%20App%20Store.%20Thanks%21"><span>Email me when it&#x27;s out</span></a>
+      <a class="btn btn-ghost-dark" href="https://www.linkedin.com/in/alex-cormeraie/" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>Follow on LinkedIn</span><span class="vh"> (new tab)</span></a>
+      <button type="button" class="gate-skip" data-close>Close</button>
+    </div>
+  </div>
+</dialog>
 </body>
 </html>
